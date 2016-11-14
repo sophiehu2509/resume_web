@@ -1,0 +1,80 @@
+
+body {
+    background: #F3EFE0;
+    font-size: 15px;
+    line-height: 1.64;
+    color: #434242;
+    font-family: 'Open Sans', sans-serif !important;
+    text-align: left;
+
+}
+.body{
+	background-image: url('images/mario1.jpg');
+	margin: 0 auto;
+	width: 70%;
+}
+
+.mainheader nav{
+	background-color: #666;
+	height: 40px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+
+}
+.mainheader nav ul li{
+	list-style: none;
+	display: inline;
+	float: left;
+	
+	
+}
+.mainheader nav a:link, .mainheader nav a:visited{
+	color: #FFF;
+	text-decoration: none;
+	display: inline-block;
+	padding: 10px 70px;
+	height: 20px;
+	padding -top: 0px;
+}
+.mainheader nav a:hover, .mainheader nav a:active, 
+.mainheader nav .active a:visited, .mainheader nav .active a:link{
+	background-color: #CF5C3F;	
+	text-shadow: none;
+}
+
+.mainheader nav ul li a{
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+.maincontent{
+	
+}
+.content{
+	width: 70%;
+	float: left;
+}
+.content #topcontent, .content #secondcontent{
+	background-color: white;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 2%;
+	margin: 2% 0;
+}
+
+#thirdcontent{
+	background-color: white;
+	width: 25%;
+	float: right;
+	padding: 2%;
+	margin: 1.5% 0;
+	order-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+
+
+
