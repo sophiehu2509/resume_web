@@ -1,4 +1,4 @@
-/*html，body{
+html，body{
 	color: #434242;
 	font-family: 'Open Sans', sans-serif !important;
 	height: 100%;
@@ -234,7 +234,7 @@ h3{
 /* End of linkin link*/
 
 
-/*.fixed .navbar{
+.fixed .navbar{
 	position: fixed;
 	top: 60px;
 }
@@ -362,7 +362,7 @@ ul.no-bullets {
 		margin: auto;
 	}
 
-}*/
+}
 
 
 
@@ -372,7 +372,7 @@ ul.no-bullets {
 
 
 
-html, body { 
+/*html, body { 
   color: #434242; 
   font-family: 'Open Sans', sans-serif !important; 
   height: 100%;
@@ -573,7 +573,7 @@ hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity
 }
 
 /* #projects .row { margin: 0px; } // bootstrap 3.1- hack */
-#projects .row > div { margin-bottom: 30px; }
+/*#projects .row > div { margin-bottom: 30px; }
 #projects figure { position: relative; overflow: hidden; }
 #projects figure h3 { color: #FFF; font-weight: 600; margin-bottom: 5px; }
 #projects figure p > strong { width: 60px; display: inline-block; margin: 0px; }
@@ -700,7 +700,7 @@ hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity
   100% {
     padding-top: 20px;
   }
-}
+}*/
 
 
 
