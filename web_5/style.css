@@ -1,0 +1,73 @@
+html，body{
+	color: #434242;
+	font-family: 'Open Sans', sans-serif !important;
+	margin: 0;
+	height: 100%;
+}
+body{
+	background: #F3EFE0;
+	font-size: 15px;
+	line-height: 1.64;
+	color: #434242;
+	height: 100%;
+   font-family: 'Open Sans', sans-serif !important;
+}
+.container {
+    margin: 0 auto;
+    height: 100%;
+    padding: 20px 0;
+
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.jumbotron{ 
+	height: 100%;
+}
+.jumbotron {
+
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*.jumbotron{ 
+  background: url(images/mario.gif) no-repeat center center fixed; 
+
+
+	margin-bottom: 0px;
+	background-size: cover;
+	padding: 0px;
+
+  -webkit-background-size: 100%; 
+    -moz-background-size: 100%; 
+    -o-background-size: 100%; 
+    background-size: 100%; 
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/background.jpg', sizingMethod='scale')";
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/background.jpg', sizingMethod='scale');
+}
+
+.jumbotron .overlay{
+	background-color: #22A39F;
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	opacity: 0.75;
+	filter:alpha(opacity=75);
+	z-index: 2；
+}*/
+
+
+
+
+
+
+
+
