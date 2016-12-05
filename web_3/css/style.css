@@ -1,3 +1,4 @@
+@font-face { font-family: Open Sans; src: url('Delicious-Roman.otf'); } 
 html，body{
 	color: #434242;
 	font-family: 'Open Sans', sans-serif !important;
@@ -176,7 +177,7 @@ hr{
 	width: 100%; max-width: 246px; height: auto;
 }
 
-/*Profile*//*
+/*Profile*/
 h2{
 	font-size: 54px;
 	text-align: center;
@@ -184,7 +185,7 @@ h2{
 h3{
 	font-size: 28px;
 
-}*/
+}
 
 /* linkin link*/
 #nonsensewrap {
@@ -239,9 +240,7 @@ h3{
 	top: 60px;
 }
 
-#experience .experience {
-	margin-bottom: 20px;
-}
+
 
 #experience .experience .experiences-details > span{
 	display: block;
@@ -263,7 +262,14 @@ h3{
 	padding-top: 8px;
 	margin-bottom: 10px;
 }
+#experiences .experience p > strong { display: block; padding-top: 8px; margin-bottom: 10px; }
+#experiences .experience .experience-details { display: block; margin-top: 6px; }
+#experiences .experience .experience-details * { color: #22A39F; }
+#experiences .experience .experience-details .seperator { color: #BCBCBC; }
+
 #experience .career .career-row{
+  display: block;
+  padding-top: 8px;
 	margin-bottom: 50px;
 }
 
