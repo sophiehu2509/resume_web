@@ -6,6 +6,32 @@ $(document).ready(function(){
 	applyMailTo();
 });
 
+$(function() {
+    // Stick the #nav to the top of the window
+    var nav = $('.navbar');
+    var navHomeY = nav.offset().top;
+    var isFixed = false;
+    var $w = $(window);
+    $w.scroll(function() {
+        var scrollTop = $w.scrollTop();
+        //var shouldBeFixed = scrollTop > navHomeY;
+        var shouldBeFixed = scrollTop > $('.scroll-drown').offset().top + 20;
+       // if (shouldBeFixed && !isFixed) {
+       	if (shouldBeFixed ) {
+            $('body').addClass('fixed');
+            isFixed = true;
+        }
+        //else if (!shouldBeFixed && isFixed)
+        else if (!shouldBeFixed )
+        {
+            $('body').removeClass('fixed');
+            isFixed = false;
+        }
+    });
+
+});
+
+
 function applyHeader(){
 	$('.jumbotron').css({height:($(window).height()) + 'px'});
 }

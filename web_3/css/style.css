@@ -119,6 +119,8 @@ hr{
 }
 .jumbotron .scroll-drown:hover .glyphicon { padding-top: 25px; }
 
+
+
 .navbar{
 	border: 0px; background: #222222;
 	position: absolute;
@@ -133,6 +135,7 @@ hr{
 .navbar-nav{
 	margin: 0px;
 }
+
 .navbar .navbar-collapse{
 	padding: 0px; max-height: none;
 }
@@ -161,6 +164,11 @@ hr{
 .navbar-default .navbar-toggle:hover .icon-bar,
 .navbar-default .navbar-toggle:focus .icon-bar{
 	background: #222222;
+}
+
+.fixed .navbar{
+  position: fixed;
+  top: 60px;
 }
 
 .background-white{
@@ -235,10 +243,7 @@ h3{
 /* End of linkin link*/
 
 
-.fixed .navbar{
-	position: fixed;
-	top: 60px;
-}
+
 
 
 
@@ -358,8 +363,9 @@ ul.no-bullets {
 	.navbar{
 		left: 0px; width: 100%;
 	}
+   .fixed .navbar { top: 0px; }
 	.container {padding: 60px 20px; min-width: 280px;}
-	.fixed .navbar{top: 0px;}
+	
 	.hidden-phone { display: none; }
 
 	#profile .row{text-align: center;}

@@ -1,0 +1,118 @@
+.container{
+  max-width: 1280px;
+  padding: 40px 180px;
+}
+.jumbotron .scroll-down{
+  height: 80px; width: 110px; display: block;
+  position: absolute;
+  bottom: 0px; right: 5%;
+  background-color: #222222;
+  text-align: center;
+  z-index: 6;
+}
+
+.jumbotron .scroll-drown .glyphicon{
+  color: #FFFFFF;
+  font-size: 30px;
+  padding-right: 2px;
+  padding-top: 20px;
+  animation-name:wiggle;
+  animation-duration:1.2s;
+  animation-timing-function:linear;
+  animation-iteration-count:infinite;
+  animation-direction:normal;
+}
+.jumbotron .scroll-drown{
+  height: 80px; width: 110px; 
+  display: block; 
+  position: absolute;
+  bottom: 0px; right: 5%; 
+  background-color: #222222;
+  text-align: center;
+  z-index: 6;
+}
+.jumbotron .scroll-drown:hover .glyphicon { padding-top: 25px; }
+
+.navbar{
+  border: 0px; background: #222222;
+  position: absolute;
+  float: right;
+  right: 5%;
+  top : 0px;
+  width: 110px;
+  z-index: 999;
+}
+.navbar .navbar-nav{
+  float: none;
+}
+.navbar-nav{
+  margin: 0px;
+}
+
+.navbar .navbar-collapse{
+  padding: 0px; max-height: none;
+}
+.navbar .navbar-nav{
+  float: none;
+}
+.navbar .nav > li{
+  display: block;
+  float: none;
+  height: 80px;
+}
+.navbar .nav > li a{
+  display: block; height: 80px;
+  text-align: center;
+  padding-top: 30px;
+  font-weight: 600;
+}
+
+
+.navbar .nav > li a:hover, .navbar .nav > li a:focus{
+  color: #999999;
+}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus{
+  background: #22A39F; color: #FFFFFF;
+}
+.navbar-default .navbar-toggle:hover .icon-bar,
+.navbar-default .navbar-toggle:focus .icon-bar{
+  background: #222222;
+}
+.fixed .navbar{
+  position: fixed;
+  top: 60px;
+}
+.background-white{
+  background-color: white;
+}
+
+#profile .row > div{
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+
+#profile .row > div img{
+  width: 100%; max-width: 246px; height: auto;
+}
+
+#project .project  p > strong{
+  display: block;
+}
+
+
+#project .project > div img{
+  padding-left: 20px;
+
+}
+
+#project .project h3{
+  color: #22A39F;
+
+}
+
+#project .project .experiences-details {
+  margin-top: -20px;
+}
