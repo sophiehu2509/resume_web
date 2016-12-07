@@ -377,7 +377,67 @@ ul.no-bullets {
 }
 
 
+@media (max-width: 1200px) { 
+  #interests .interest-content { padding: 20px 0px; }
+}
 
+@media (max-width: 767px) { 
+  .jumbotron:before {
+    bottom: 100px;
+    left: 20px;
+    right: 20px;
+    top: 20px;    
+  }
+  .jumbotron .container { top: 20%; padding-top: 0px; }
+  .jumbotron .scroll-down { width: 100%; right: 0px; }
+  
+  .navbar  { left: 0px; width: 100%; }
+  .navbar .nav > li { height: 60px; }
+  .navbar .nav > li a { height: 60px; text-align: center; padding-top: 20px; font-weight: 600; color: #FFFFFF; }
+  
+  .fixed .navbar { top: 0px; }
+  
+  .container { padding: 60px 20px; min-width: 280px; }
+  .hidden-phone { display: none; }
+  
+  #profile .row * { text-align: center; }
+  
+  #experiences .experience .experience-details > span { display: block; margin-bottom: 6px; }
+  #experiences .experience .experience-details .seperator { display: none; }
+  
+  #contact { padding-bottom: 60px; }
+  #contact a .icon { float: left; margin-right: 10px; }
+}    
+
+@media only screen and (orientation: portrait) and (max-width: 767px)  {
+    .jumbotron {
+      -webkit-background-size: auto 150%;
+      background-attachment: scroll;
+    }
+}
+@media only screen and (orientation: landscape) and (max-width: 767px)  {
+
+    .jumbotron {
+      -webkit-background-size: 150% auto;
+      background-attachment: scroll;
+    }
+  
+  .jumbotron .lead { display: none; }
+}
+
+@keyframes wiggle {
+  0% {
+    padding-top: 20px;
+  }
+
+  50% {
+    padding-top: 28px;
+  }
+
+  100% {
+    padding-top: 20px;
+  }
+}
 
 
 
