@@ -1,7 +1,7 @@
 @font-face { font-family: Open Sans; src: url('Delicious-Roman.otf'); } 
 html，body{
 	color: #434242;
-	font-family: 'Open Sans', sans-serif !important;
+	font-family: 'Roboto Slab', serif;
 	height: 100%;
 }
 body{
@@ -9,7 +9,8 @@ body{
 	font-size: 15px;
 	line-height: 1.64;
 	color: #434242;
-   font-family: 'Open Sans', sans-serif !important;
+  /* font-family: 'Open Sans', sans-serif !important;*/
+  font-family: 'Roboto Slab', serif;
 }
 .container{
 	max-width: 1280px;
@@ -76,13 +77,19 @@ h1, h4{
 	margin-bottom: 10px;
 }
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, strong, b {
-    font-family: 'Open Sans', sans-serif !important;
+h1, h2, h3{
+    font-family: 'Indie Flower', cursive;
+    margin-bottom: 20px;
+}
+
+h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, strong, b {
+    font-family: 'Roboto Slab', serif;
     margin-bottom: 20px;
 }
 h2,h3 { font-weight: 300; color: #22A39F; }
 
 p.lead {
+  font-family: 'Indie Flower', cursive;
 	text-align: center;
 	color: #727878;
 }
@@ -262,11 +269,7 @@ h3{
 	padding-top: 8px;
 	margin-bottom: 10px;
 }
-#experience .career p > strong{
-	display: block;
-	padding-top: 8px;
-	margin-bottom: 10px;
-}
+
 #experiences .experience p > strong { display: block; padding-top: 8px; margin-bottom: 10px; }
 #experiences .experience .experience-details { display: block; margin-top: 6px; }
 #experiences .experience .experience-details * { color: #22A39F; }
@@ -377,9 +380,6 @@ ul.no-bullets {
 }
 
 
-@media (max-width: 1200px) { 
-  #interests .interest-content { padding: 20px 0px; }
-}
 
 @media (max-width: 767px) { 
   .jumbotron:before {
