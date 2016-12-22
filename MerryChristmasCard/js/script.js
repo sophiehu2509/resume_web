@@ -1,5 +1,5 @@
 
-var floor1_hover_bg = 'url(images/merryChris3.png)'; 
+var floor1_hover_bg = 'url(images/merryChris5.png)'; 
 var floor1_inactive_bg = 'url(images/merryChris1.png)';
 
 var floor2_hover_bg = 'url(images/merryChris4.png)';
