@@ -40,28 +40,66 @@
           opacity: 0;
         }
 
-        .book-bg:hover .book-cover{
-          transform:rotateX(-180deg);
+        /*.book-bg:hover .book-cover{
+           transform:rotateX(-180deg);
           position: relative;
           background: url('images/merryChris2.png') no-repeat;
           background-size: cover;
           width: 400px;
           height: 324px;
+        }*/
+
+        .floor2{
+            position: relative;
+                width: 400px;
+                height: 300px;
+                margin:0px auto;
+
+          border: 1px solid black;
+         
+          background: url('images/merryChris2.png') no-repeat;
+          background-size: cover;
         }
+        .floor1 {
+            position: relative;
+            width: 400px;
+            height: 300px;
+            margin: 0px auto;
+        
+            background: url('images/merryChris1.png') no-repeat;
+          background-size: cover;
+           border: 1px solid black;
+        }
+
+
 
       
 
     </style>
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+
     
   </head>
   <body>
-     <div class="book-bg">
+    <!-- <div class="book-bg">
         <div class="book-cover"></div>
         <div class="book-page"></div>
-     </div>
+     </div> -->
+
+     <div id="building">
+    <div class="floor">
+        <div class="floor1"></div>
+    </div>
+
+    <div class="floor">
+        <div class="floor2"></div>
+    </div>
+</div>
+<div id="elevation"></div>
    
   
-  <script src="https://code.jquery.com/jquery-2.1.3.min.js" integrity="sha256-ivk71nXhz9nsyFDoYoGf2sbjrR9ddh+XDkCcfZxjvcM=" crossorigin="anonymous"></script>
-  <script type="text/javascript"></script>
+<!--  <script src="https://code.jquery.com/jquery-2.1.3.min.js" integrity="sha256-ivk71nXhz9nsyFDoYoGf2sbjrR9ddh+XDkCcfZxjvcM=" crossorigin="anonymous"></script> -->
+
   </body>
 </html>
