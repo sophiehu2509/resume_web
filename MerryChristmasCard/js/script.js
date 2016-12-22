@@ -13,7 +13,7 @@ $(document).ready(function(){
     var judge = false;
 
     // FIRST FLOOR
-    $('.floor1').mouseover(function(){
+    /*$('.floor1').mouseover(function(){
         $('.floor1').css('background', floor1_hover_bg);
          $('.floor1').css('background-size', 'cover');
         
@@ -35,7 +35,7 @@ $(document).ready(function(){
              $('.floor1').css('background-size', 'cover');
            
         }
-    });
+    });*/
     $('.floor1').on('click', function(){
      
         //keep_floor1_highlighted = true;
@@ -62,7 +62,7 @@ $(document).ready(function(){
     });
     
     // SECOND FLOOR
-    $('.floor2').mouseover(function(){
+    /*$('.floor2').mouseover(function(){
         $('.floor2').css('background', floor2_hover_bg);
         $('.floor2').css('background-size', 'cover');
     });
@@ -82,7 +82,7 @@ $(document).ready(function(){
             $('.floor2').css('background-size', 'cover');
            
         }
-    });
+    });*/
     $('.floor2').on('click', function(){
         if (judge){
             //$('.floor1').css('background', floor1_hover_bg);
