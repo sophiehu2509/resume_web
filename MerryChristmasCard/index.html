@@ -4,107 +4,241 @@
     <meta charset="UTF-8">
     <title>Merry Christmas Card</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Maven+Pro|Yantramanav" rel="stylesheet">
     <style type="text/css">
+    @font-face { font-family: Open Sans; src: url('Delicious-Roman.otf'); } 
         *{
           margin: 0;
           padding: 0;
         }
-        .book-bg{
-          position: relative;
-          width: 400px;
-          height: 324px;
-          margin: 300px auto;
-          background: url('images/merryChris4.png') no-repeat;
-          background-size: cover;
-          transform-style: preserve-3d;
-          perspective:500px;
-        }
-        .book-cover{
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          background: url('images/merryChris1.png') no-repeat;
-          background-size: cover;
-          -webkit-transform-origin: 100% 0;
-          transition: all 0.3s ease;
-        }
-
-        .book-page {
-          position: relative;
-          width: 100%;
-          height: 100%;
-          background: url('images/merryChris2.png') no-repeat;
-          background-size: cover;
-          -webkit-transform-origin: 0 50%;
-          transition: all 0.3s ease;
-          opacity: 0;
-        }
-
-        /*.book-bg:hover .book-cover{
-           transform:rotateX(-180deg);
-          position: relative;
-          background: url('images/merryChris2.png') no-repeat;
-          background-size: cover;
-          width: 400px;
-          height: 324px;
-        }*/
 
         .floor2{
             position: relative;
-                width: 400px;
-                height: 300px;
-                margin:0px auto;
+            width: 400px;
+            height: 300px;
+            margin:0px auto;
 
           border: 1px solid black;
          
           background: url('images/merryChris2.png') no-repeat;
           background-size: cover;
           -webkit-background-size: 100%; 
-    -moz-background-size: 100%; 
-    -o-background-size: 100%; 
-    background-size: 100%; 
+          -moz-background-size: 100%; 
+          -o-background-size: 100%; 
+          background-size: 100%; 
   
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
   
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/background.jpg', sizingMethod='scale')";
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/background.jpg', sizingMethod='scale');
+          -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/background.jpg', sizingMethod='scale')";
+          filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/background.jpg', sizingMethod='scale');
         }
         .floor1 {
             position: relative;
             width: 400px;
             height: 300px;
             margin: 0px auto;
+
         
             background: url('images/merryChris1.png') no-repeat;
-          background-size: cover;
-           border: 1px solid black;
+            background-size: cover;
+            border: 1px solid black;
 
            -webkit-background-size: 100%; 
-    -moz-background-size: 100%; 
-    -o-background-size: 100%; 
-    background-size: 100%; 
+           -moz-background-size: 100%; 
+           -o-background-size: 100%; 
+           background-size: 100%; 
+          
+           -webkit-background-size: cover;
+           -moz-background-size: cover;
+           -o-background-size: cover;
+           background-size: cover;
   
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/background.jpg', sizingMethod='scale')";
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/background.jpg', sizingMethod='scale');
+           -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/background.jpg', sizingMethod='scale')";
+           filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/background.jpg', sizingMethod='scale');
         }
 
+        .floor .link a{
+          opacity: 1;
+          text-decoration: none;
+          color: black;
+          float: right;
+          margin-top: 250px;
+          margin-right: 30px;
+        }
+        .floor .link  .no-babble{
+          text-decoration: none;
+          list-style-type: none;
+        }
+        h2 {
+          text-align: center;
+          margin-top: 20px;
+          font-family: 'Yantramanav', sans-serif;
+         
+          font-size: 50px;
+          font-weight:normal;
+        }
+        h2 .mc{
+       
+          color: #b56969;
+        
+        }
+        h2 .h{
+          color:#E91E63
+        }
+         h2 .i{
+          color: #FFEB3B
+        }
+         h2 .ii{
+          color: #2196F3
+        }
 
+        h2 .m1{
+       
+          color: white;
+        
+        }
+        h2 .m2{
+          color: white;
+        }
+         h2 .m5{
+          color:white;
+        }
 
-      
+        .floor .floor2 .link ul a {
+          color:white;
+        }
 
     </style>
-    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-  <script type="text/javascript" src="js/script.js"></script>
 
-    
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="js/snowstorm.js"></script>
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script> 
+    <script type="text/javascript" src="js/script.js"></script>
+    <script>
+      snowStorm.excludeMobile = false;
+      snowStorm.autoStart = true;
+      snowStorm.animationInterval = 30;
+      snowStorm.useTwinkleEffect = false;
+      snowStorm.flakesMaxActive = 50; 
+    </script>
+<!--<script type="text/javascript" >
+/*function init(){
+    var canvas = document.getElementById('sky');
+    var ctx = canvas.getContext('2d');
+    var w = canvas.width;
+    var h = canvas.height;
+  //var w = canvas.innerWidth;
+  // var h = canvas.innerHeight;
+  // canvas.width=w;
+   //canvas.height=h;
+
+    var bg = new Image();
+   // bg.src = "images/merryChris2.png"
+    var img=document.getElementById("source");
+
+    var flakes = [];
+    function snowfall(){
+        ctx.drawImage(img, 0, 0);
+        addFlake();
+        snow();
+    };
+
+    function addFlake(){
+        var x = Math.ceil(Math.random() * w);
+        var s = Math.ceil(Math.random() * 4);
+        flakes.push({"x": x, "y": 0, "s": s});
+
+    };
+
+    function snow(){
+        for (var i = 0; i< flakes.length; i++){
+            var flake = flakes[i];
+            ctx.beginPath();
+            ctx.fillStyle = "rgba(255, 255, 255, 0.7)";
+            ctx.arc(flake.x, flakes[i].y += flake.s/2, flake.s/2, 0, 2*Math.PI);
+            ctx.fill();
+            if (flakes[i].y > h){
+                flakes.splice(i, 1);
+            }
+        };
+    };
+
+    setInterval(snowfall, 20);
+};
+window.onload = init;*/
+
+window.onload = function (){
+
+   var canvas = document.getElementById("sky");
+   var ctx = canvas.getContext("2d");
+
+   var W = window.innerWidth;
+   var H = window.innerHeight;
+   canvas.width=W;
+   canvas.height=H;
+   console.log(W);
+
+   var mf = 100;
+   var flakes = [];
+
+   //look through the empty flakes and apply attributes
+   for (var i = 0; i<mf;i++){
+    flakes.push({
+        x:Math.random()*W,
+        y:Math.random()*H,
+        r:Math.random()*5 + 2, //min of 2px and max of 7px
+        d:Math.random() + 1 //density of the flake
+    })
+   }
+
+   //draw flakes onto canvas
+   function drawFlakes(){
+        ctx.clearRect(0, 0, W, H);
+        ctx.fillStyle = "gray";
+        ctx.beginPath();
+        for(var i = 0;i<mf;i++){
+            var f = flakes[i];
+            ctx.moveTo(f.x, f.y);
+            ctx.arc(f.x, f.y, f.r, 0, Math.PI*2, true);
+        }
+        ctx.fill();
+        moveFlakes();
+   }
+
+   //animate the flakes
+   var angle = 0;
+   function moveFlakes(){
+        angle += 0.01;
+        for(var i = 0; i<mf; i++){
+            //store current flake
+            var f = flakes[i];
+           // console.log(f);
+            //update X and Y coordinates of each snowflake
+           f.y += Math.pow(f.d, 2) + 1;
+           // f.y += Math.cos(angle + f.d) + 1 + f.r/2;
+            console.log(f.y);
+            f.x += Math.sin(angle) *2;
+            
+            //if the snowflake reaches the bottom, send a new one to the top
+            if (f.y > H){
+                flakes[i] = {x: Math.random() * W, y:0, r:f.r, d: f.d};
+            }
+        }
+   }
+
+   setInterval(drawFlakes, 25);
+
+}
+
+
+
+
+ </script>   --> 
   </head>
   <body>
     <!-- <div class="book-bg">
@@ -112,17 +246,40 @@
         <div class="book-page"></div>
      </div> -->
 
-     <div id="building">
-    <div class="floor">
-        <div class="floor1"></div>
-    </div>
+    
+<div id="building">
+    <!-- <canvas id = "sky" width ="400" height ="600"> </canvas>  -->  
+        <div id="floor">
+            <div class="floor1"> 
+              <h2 > <span class="h">H </span> 
+              <span class="i">i</span> <span class="ii">,</span>
+              </h2>
+              <h2 ><span class="m1">Merry</span><span class="m2"> Christmas</span><span class="m5">!</span></h2>
+            </div>
+        </div>
 
-    <div class="floor">
-        <div class="floor2"></div>
-    </div>
-</div>   
+        <div class="floor">
+            <div class="floor2">
+              <div class="link">
+                <ul class = "no-babble">
+                  <li>
+                    <a  href="https://www.behance.net/gallery/21277907/In-your-face-Santa" target="_blank">
+                    <i class="fa fa-linkedin-square" aria-hidden="true"></i> Image</a>
+                  </li>
+                  <li>
+                      <a href="https://sophiehu2509.github.io/resume_web/web_3/" target="_blank">
+                    <i class="fa fa-linkedin-square" aria-hidden="true"></i> Author</a>
+                  </li>
+                </ul>
+          
+            </div>
+            </div>
+        </div> 
   
-<!--  <script src="https://code.jquery.com/jquery-2.1.3.min.js" integrity="sha256-ivk71nXhz9nsyFDoYoGf2sbjrR9ddh+XDkCcfZxjvcM=" crossorigin="anonymous"></script> -->
+</div>  <!-- end of building-->
+
+  
+ <script src="https://code.jquery.com/jquery-2.1.3.min.js" integrity="sha256-ivk71nXhz9nsyFDoYoGf2sbjrR9ddh+XDkCcfZxjvcM=" crossorigin="anonymous"></script>
 
   </body>
 </html>
