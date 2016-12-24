@@ -13,6 +13,7 @@ $(document).ready(function(){
     var keep_floor2_highlighted = false;
     var judge = false;
     $('.link').css('opacity', '0');
+    $('.floor1 h2').css('opacity', '1');
     // FIRST FLOOR
     /*$('.floor1').mouseover(function(){
         $('.floor1').css('background', floor1_hover_bg);
@@ -47,6 +48,7 @@ $(document).ready(function(){
             //$('.floor2').css('background-size', 'cover');
             $('.floor1').css('background', floor1_inactive_bg);
             $('.floor1').css('background-size', 'cover');
+            $('.floor1 h2').css('opacity', '1');
             //keep_floor1_highlighted = true;
             //keep_floor2_highlighted = false;
             judge = false;
@@ -55,6 +57,7 @@ $(document).ready(function(){
         //keep_floor2_highlighted = true;
         $('.floor1').css('background', floor1_hover_bg);
         $('.floor1').css('background-size', 'cover');
+        $('.floor1 h2').css('opacity', '0');
         //$('.floor2').css('background', floor2_inactive_bg);
         //$('.floor2').css('background-size', 'cover');
         //keep_floor1_highlighted = false;
