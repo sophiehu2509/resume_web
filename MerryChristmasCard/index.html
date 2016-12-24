@@ -62,23 +62,23 @@
            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/background.jpg', sizingMethod='scale');
         }
 
-        .floor .link a{
+        .floor2 .link ul a{
           opacity: 1;
-          text-decoration: none;
+          text-decoration: none; 
           color: black;
           float: right;
-          margin-top: 250px;
-          margin-right: 30px;
+          margin-top: 220px;
+          margin-right: 20px;
         }
         .floor .link  .no-babble{
           text-decoration: none;
           list-style-type: none;
+
         }
         h2 {
           text-align: center;
           margin-top: 20px;
           font-family: 'Yantramanav', sans-serif;
-         
           font-size: 50px;
           font-weight:normal;
         }
@@ -111,7 +111,9 @@
           color:white;
         }
 
-       
+        .floor1 h2{
+          opacity: 1;
+        }
 
     </style>
 
@@ -126,129 +128,11 @@
       snowStorm.useTwinkleEffect = false;
       snowStorm.flakesMaxActive = 50; 
     </script>
-<!--<script type="text/javascript" >
-/*function init(){
-    var canvas = document.getElementById('sky');
-    var ctx = canvas.getContext('2d');
-    var w = canvas.width;
-    var h = canvas.height;
-  //var w = canvas.innerWidth;
-  // var h = canvas.innerHeight;
-  // canvas.width=w;
-   //canvas.height=h;
 
-    var bg = new Image();
-   // bg.src = "images/merryChris2.png"
-    var img=document.getElementById("source");
-
-    var flakes = [];
-    function snowfall(){
-        ctx.drawImage(img, 0, 0);
-        addFlake();
-        snow();
-    };
-
-    function addFlake(){
-        var x = Math.ceil(Math.random() * w);
-        var s = Math.ceil(Math.random() * 4);
-        flakes.push({"x": x, "y": 0, "s": s});
-
-    };
-
-    function snow(){
-        for (var i = 0; i< flakes.length; i++){
-            var flake = flakes[i];
-            ctx.beginPath();
-            ctx.fillStyle = "rgba(255, 255, 255, 0.7)";
-            ctx.arc(flake.x, flakes[i].y += flake.s/2, flake.s/2, 0, 2*Math.PI);
-            ctx.fill();
-            if (flakes[i].y > h){
-                flakes.splice(i, 1);
-            }
-        };
-    };
-
-    setInterval(snowfall, 20);
-};
-window.onload = init;*/
-
-window.onload = function (){
-
-   var canvas = document.getElementById("sky");
-   var ctx = canvas.getContext("2d");
-
-   var W = window.innerWidth;
-   var H = window.innerHeight;
-   canvas.width=W;
-   canvas.height=H;
-   console.log(W);
-
-   var mf = 100;
-   var flakes = [];
-
-   //look through the empty flakes and apply attributes
-   for (var i = 0; i<mf;i++){
-    flakes.push({
-        x:Math.random()*W,
-        y:Math.random()*H,
-        r:Math.random()*5 + 2, //min of 2px and max of 7px
-        d:Math.random() + 1 //density of the flake
-    })
-   }
-
-   //draw flakes onto canvas
-   function drawFlakes(){
-        ctx.clearRect(0, 0, W, H);
-        ctx.fillStyle = "gray";
-        ctx.beginPath();
-        for(var i = 0;i<mf;i++){
-            var f = flakes[i];
-            ctx.moveTo(f.x, f.y);
-            ctx.arc(f.x, f.y, f.r, 0, Math.PI*2, true);
-        }
-        ctx.fill();
-        moveFlakes();
-   }
-
-   //animate the flakes
-   var angle = 0;
-   function moveFlakes(){
-        angle += 0.01;
-        for(var i = 0; i<mf; i++){
-            //store current flake
-            var f = flakes[i];
-           // console.log(f);
-            //update X and Y coordinates of each snowflake
-           f.y += Math.pow(f.d, 2) + 1;
-           // f.y += Math.cos(angle + f.d) + 1 + f.r/2;
-            console.log(f.y);
-            f.x += Math.sin(angle) *2;
-            
-            //if the snowflake reaches the bottom, send a new one to the top
-            if (f.y > H){
-                flakes[i] = {x: Math.random() * W, y:0, r:f.r, d: f.d};
-            }
-        }
-   }
-
-   setInterval(drawFlakes, 25);
-
-}
-
-
-
-
- </script>   --> 
   </head>
   <body>
-    <!-- <div class="book-bg">
-        <div class="book-cover"></div>
-        <div class="book-page"></div>
-     </div> -->
-
     
-<div id="building">
-    <!-- <canvas id = "sky" width ="400" height ="600"> </canvas>  -->  
+<div id="building">  
         <div class="floor">
             <div class="floor1"> 
               <h2 > <span class="h">H </span> 
@@ -264,11 +148,11 @@ window.onload = function (){
                 <ul class = "no-babble">
                   <li>
                     <a  href="https://www.behance.net/gallery/21277907/In-your-face-Santa" target="_blank">
-                    <i class="fa fa-linkedin-square" aria-hidden="true"></i> Image</a>
+                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>Image?</a>
                   </li>
                   <li>
                       <a href="https://sophiehu2509.github.io/resume_web/web_3/" target="_blank">
-                    <i class="fa fa-linkedin-square" aria-hidden="true"></i> Author</a>
+                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>Like Me?</a>
                   </li>
                 </ul>
           
