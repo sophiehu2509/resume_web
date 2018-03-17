@@ -1,199 +1,129 @@
 var lnStickyNavigation;
+var isNavBarShown = false;
 
 $(document).ready(function(){
 	applyHeader();
-	applyNavigation();
-	applyMailTo();
+	//applyNavigation();
+	//applyMailTo();
+   applyNav();
+   // applyStickyNavigation();
 });
 
-$(function() {
+/*$(function() {
     // Stick the #nav to the top of the window
-    var nav = $('.navbar');
-    var navHomeY = nav.offset().top;
+    var jum = $('.jumbotron');
+    
     var isFixed = false;
     var $w = $(window);
-    $w.scroll(function() {
+    $w.scroll( function() {
         var scrollTop = $w.scrollTop();
         //var shouldBeFixed = scrollTop > navHomeY;
-        var shouldBeFixed = scrollTop > $('.scroll-drown').offset().top + 20;
-       // if (shouldBeFixed && !isFixed) {
-       	if (shouldBeFixed ) {
-            $('body').addClass('fixed');
+        var shouldBeShow = scrollTop > jum.offset().top + 20;
+       // if (shouldBeFixed && !isFixed) 
+
+        if (shouldBeShow ) {
+            /*if ($('.navbar').is( ":visible" ) ) {
+                $('.navbar').fadeOut(100);
+            }*/
+            
+          
+        //$('.navbar').show();
+        /*if ($('.navbar').css(('opacity') == '0.75') {
+            $('.navbar').css({
+            'opacity': '0';
+            height:$(window).height() + 'px'
+            });
+        }
+        //$('.navbar').fadeOut(100);
+       $('.navbar').fadeIn(500);
+        /*$('.navbar').hover(function() { 
+                $('.navbar').fadeIn(500);
+            },function() {   
+                $('.navbar').fadeOut(100);
+            });
             isFixed = true;
+
+        }else if (!shouldBeShow ){
+              //$('.navbar').fadeIn(500);
+            $('.navbar').show();
+            $('.navbar').css({opacity:0.75});
         }
-        //else if (!shouldBeFixed && isFixed)
-        else if (!shouldBeFixed )
-        {
-            $('body').removeClass('fixed');
-            isFixed = false;
-        }
+       
+         
+  
     });
 
-});
+});*/
+
+function checkNeedForHiding() {
+      if($(window).scrollTop() > lnStickyNavigation){
+            $('.navbar').hover(function() { 
+                $('.navbar').fadeIn(500);
+            },function() {   
+                $('.navbar').fadeOut(100);
+            });
+    }else {
+         $('.navbar').hover(function() { 
+                $('.navbar').fadeIn(500);
+            },function() {   
+                $('.navbar').fadeOut(100);
+            });
+    }
+}
+
+function applyStickyNavigation(){
+    lnStickyNavigation = $('.jumbotron').offset().top + 20;
+
+    $(window).on(function(){
+        checkNeedForHiding();
+    });
+    checkNeedForHiding();
+}
+
+
 
 
 function applyHeader(){
-	$('.jumbotron').css({height:($(window).height()) + 'px'});
+	$('.jumbotron').css({height:$(window).height() + 'px'});
 }
 
-function applyNavigation(){
-	applyClickEvent();
-	applyNavigationFixForPhone();
-	applyScrollSpy();
-	applyStickyNavigation();
+
+
+function applyNav(){
+    var ishead = true;
+
+    
+        //$(".navbar").hide();
+        $(".navbar").addClass('showme');
+        
+        // fade in .navbar
+        $(window).scroll(function () {
+                // set distance user needs to scroll before we fadeIn navbar
+            if ($(this).scrollTop() > 100) {
+                $('.navbar').removeClass('showme');  
+                isNavBarShown = true;
+                
+            } else {
+                 $('.navbar').addClass('showme');
+                isNavBarShown = false;
+            }
+        });
+
+
+        /* when navbar is hovered over it will override previous */
+       $('.navbar').hover(function () {
+            if (isNavBarShown) { return; }
+            //$('.navbar').show();
+             $('.navbar').addClass('showme');
+        }, function () {
+            if (!isNavBarShown) { return; }
+            //$('.navbar').fadeOut();
+            $('.navbar').removeClass('showme');
+            //$('.navbar').addClass('showme');
+        });
+   
+    
 }
-
-function applyClickEvent(){
-	$('a[href*=#]').on('click', function(e){
-
-		e.preventDefault();
-
-		if( $( $.attr(this, 'href')).length > 0 ){
-			$( 'html, body' ).animate({
-				scrollTop: $( $.attr(this, 'href') ).offset().top
-			}, 400);
-		}
-		return false;
-	});
-}
-
-function applyNavigationFixForPhone(){
-	$( '.navbar li a').click(function(event)
-	{
-		$('.navbar-collapse').removeClass('in').addClass('collapse');
-	});
-}
-
-function applyScrollSpy()
-{
-	$('#navbar-example').on('activate.bs.scrollspy', function()
-		{
-			window.location.hash = $('.nav .active a').attr('href').replace('#', '#/');
-		});
-}
-function applyStickyNavigation(){
-	lnStickyNavigation = $('.scroll-drown').offset().top + 20;
-
-	$(window).on('scroll', function(){
-		stickyNavigation();
-	});
-	stickyNavigation();
-}
-
-function stickyNavigation()
-{
-	if($(window).scrollTop() > lnStickyNavigation)
-	{
-		$('body').addClass('fixed');
-	}
-	else{
-		$('body').removeClass('fixed');
-	}
-}
-
-/* MAILTO FUNCTION */
-
-function applyMailTo()
-{
-	$('a[href*=mailto]').on('click', function(e)
-	{
-		var lstrEmail = $(this).attr('href').replace('mailto:', '');
-		
-		lstrEmail = lstrEmail.split('').reverse().join('')
-		
-		$(this).attr('href', 'mailto:' + lstrEmail);
-	});
-}
-
-/* RESIZE FUNCTION */
-
-function applyResize()
-{
-	$(window).on('resize', function() 
-	{  
-		lnStickyNavigation = $('.scroll-down').offset().top + 20;
-	
-		$('.jumbotron').css({ height: ($(window).height()) +'px' });
-	}); 
-}
-
-/* HASH FUNCTION */
-
-function checkHash()
-{
-	lstrHash = window.location.hash.replace('#/', '#');
-	
-	if($('a[href='+ lstrHash +']').length > 0)
-	{
-		$('a[href='+ lstrHash +']').trigger('click');
-	}
-}
-
-/* IE7- FALLBACK FUNCTIONS */
-
-function checkBrowser()
-{
-	var loBrowserVersion = getBrowserAndVersion();
-	
-	if(loBrowserVersion.browser == 'Explorer' && loBrowserVersion.version < 8)
-	{ 
-		$('#upgrade-dialog').modal({
-			backdrop: 'static',
-			keyboard: false
-		});
-	}
-}
-
-function getBrowserAndVersion() 
-{
-	var laBrowserData = [{
-		string: 		navigator.userAgent,
-		subString: 		'MSIE',
-		identity: 		'Explorer',
-		versionSearch: 	'MSIE'
-	}];
-	
-	return {
-		browser: searchString(laBrowserData) || 'Modern Browser',
-		version: searchVersion(navigator.userAgent) || searchVersion(navigator.appVersion) || '0.0'
-	};
-}
-
-function searchString(paData) 
-{
-	for(var i = 0; i < paData.length; i++)	
-	{
-		var lstrDataString 	= paData[i].string;
-		var lstrDataProp 	= paData[i].prop;
-		
-		this.versionSearchString = paData[i].versionSearch || paData[i].identity;
-		
-		if(lstrDataString) 
-		{
-			if(lstrDataString.indexOf(paData[i].subString) != -1)
-			{
-				return paData[i].identity;
-			}
-		}
-		else if(lstrDataProp)
-		{
-			return paData[i].identity;
-		}
-	}
-}
-	
-function searchVersion(pstrDataString) 
-{
-	var lnIndex = pstrDataString.indexOf(this.versionSearchString);
-	
-	if(lnIndex == -1) 
-	{
-		return;
-	}
-	
-	return parseFloat(pstrDataString.substring(lnIndex + this.versionSearchString.length + 1));
-}	
-
 
 
 

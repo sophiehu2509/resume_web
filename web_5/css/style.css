@@ -143,9 +143,7 @@
   
   #experiences .experience .experience-details > span { display: block; margin-bottom: 6px; }
   #experiences .experience .experience-details .seperator { display: none; }
-  
-  #contact { padding-bottom: 60px; }
-  #contact a .icon { float: left; margin-right: 10px; }
+ 
 }    
 
 @media only screen and (orientation: landscape) and (max-width: 767px)  {
